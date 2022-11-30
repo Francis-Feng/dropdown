@@ -52,6 +52,8 @@ const data = [
     onSelect={(selected) => console.log(selected)}
 />  
 ```
+![image](https://user-images.githubusercontent.com/61172425/204747874-38e39ba6-ecbb-49e2-9e8c-8914ea3c7dcf.png)
+
 ### **Dropdown with Single Select and Search**
 ```
 <Dropdown
@@ -61,6 +63,8 @@ const data = [
     onSelect={(selected) => console.log(selected)}
 />
 ```
+![image](https://user-images.githubusercontent.com/61172425/204748083-4faca6c2-8161-4ea0-86f0-e1ac3434f52a.png)
+
 ### **Dropdown with Multiple Select and Search**
 ```
 <Dropdown
@@ -71,3 +75,5 @@ const data = [
     onSelect={(selected) => console.log(selected)}
 />
 ```
+![image](https://user-images.githubusercontent.com/61172425/204748140-bc9f276b-4e8c-4ed8-918d-bdfb0df6366f.png)
+
