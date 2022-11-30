@@ -1,7 +1,7 @@
 # Dropdown Component
 
 ## Description
-This repo contains the code for a reuseable and customizable Dropdown component written from scratch using React.
+This repo contains the code for a reusable and customizable Dropdown component written from scratch using React.
 
 ### Required Features
 - A user should be able to open and close the dropdown menu.
