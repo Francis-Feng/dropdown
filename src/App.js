@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import Dropdown from "./Dropdown";
+import "./styles/App.css";
 
 function App() {
+  const data = [
+    {key: "jeff", value: "Jeff"},
+    {key: "annie", value: "Annie"},
+    {key: "troy", value: "Troy"},
+    {key: "abed", value: "Abed"},
+    {key: "britta", value: "Britta"},
+    {key: "shirley", value: "Shirley"},
+    {key: "pierce", value: "Pierce"},
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h4>Dropdown with Single Select and No Search</h4>
+        <Dropdown
+          defaultText="Select an option"
+          data={data}
+          onSelect={(selected) => console.log(selected)}
+        />  
+      </div>
+      <div>
+        <h4>Dropdown with Single Select and Search</h4>
+        <Dropdown
+          hasSearch
+          defaultText="Select an option"
+          data={data}
+          onSelect={(selected) => console.log(selected)}
+        />  
+      </div>
+      <div>
+        <h4>Dropdown with Multiple Select and Search</h4>
+        <Dropdown
+          multipleSelect
+          hasSearch
+          defaultText="Select an option"
+          data={data}
+          onSelect={(selected) => console.log(selected)}
+        />        
+      </div>
     </div>
   );
 }
